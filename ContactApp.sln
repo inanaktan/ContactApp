@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{40E6D941-2B0A-40D2-9079-E5CB3E1FA278}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ContactService", "ContactService", "{78D203EF-114B-4716-88F3-D4DDE0963496}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{A6D19F9A-E2D0-46F7-BABB-C688D7ECB638}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp.Contact.API", "src\ContactService\WebApi\ContactApp.Contact.API\ContactApp.Contact.API.csproj", "{A3A844D1-5246-46ED-AA95-2E3FBEAEB6B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{811B6CA7-ED69-49A6-B535-E7845B3FBD20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp.Contact.Persistence", "src\ContactService\Infrastructure\ContactApp.Contact.Persistence\ContactApp.Contact.Persistence.csproj", "{320BB5BC-D648-44E5-AE0E-85EFF33EC8C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{01917A08-C6D4-4B09-9ED3-95A3C7CBF82C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp.Contact.Domain", "src\ContactService\Core\ContactApp.Contact.Domain\ContactApp.Contact.Domain.csproj", "{7C0B3C7E-8D23-4650-9D03-DD346754193B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp.Contact.Application", "src\ContactService\Core\ContactApp.Contact.Application\ContactApp.Contact.Application.csproj", "{18AF417E-E9C8-4567-B866-B6708727AA93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3A844D1-5246-46ED-AA95-2E3FBEAEB6B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3A844D1-5246-46ED-AA95-2E3FBEAEB6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3A844D1-5246-46ED-AA95-2E3FBEAEB6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3A844D1-5246-46ED-AA95-2E3FBEAEB6B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{320BB5BC-D648-44E5-AE0E-85EFF33EC8C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320BB5BC-D648-44E5-AE0E-85EFF33EC8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320BB5BC-D648-44E5-AE0E-85EFF33EC8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320BB5BC-D648-44E5-AE0E-85EFF33EC8C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C0B3C7E-8D23-4650-9D03-DD346754193B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C0B3C7E-8D23-4650-9D03-DD346754193B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C0B3C7E-8D23-4650-9D03-DD346754193B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C0B3C7E-8D23-4650-9D03-DD346754193B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18AF417E-E9C8-4567-B866-B6708727AA93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18AF417E-E9C8-4567-B866-B6708727AA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18AF417E-E9C8-4567-B866-B6708727AA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18AF417E-E9C8-4567-B866-B6708727AA93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{78D203EF-114B-4716-88F3-D4DDE0963496} = {40E6D941-2B0A-40D2-9079-E5CB3E1FA278}
+		{A6D19F9A-E2D0-46F7-BABB-C688D7ECB638} = {78D203EF-114B-4716-88F3-D4DDE0963496}
+		{A3A844D1-5246-46ED-AA95-2E3FBEAEB6B8} = {A6D19F9A-E2D0-46F7-BABB-C688D7ECB638}
+		{811B6CA7-ED69-49A6-B535-E7845B3FBD20} = {78D203EF-114B-4716-88F3-D4DDE0963496}
+		{320BB5BC-D648-44E5-AE0E-85EFF33EC8C6} = {811B6CA7-ED69-49A6-B535-E7845B3FBD20}
+		{01917A08-C6D4-4B09-9ED3-95A3C7CBF82C} = {78D203EF-114B-4716-88F3-D4DDE0963496}
+		{7C0B3C7E-8D23-4650-9D03-DD346754193B} = {01917A08-C6D4-4B09-9ED3-95A3C7CBF82C}
+		{18AF417E-E9C8-4567-B866-B6708727AA93} = {01917A08-C6D4-4B09-9ED3-95A3C7CBF82C}
+	EndGlobalSection
+EndGlobal
