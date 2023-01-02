@@ -16,5 +16,6 @@ public class ReportMappings : Profile
                     .ForMember(dest => dest.LocationReportItems, opt => opt.MapFrom(src => src.LocationReportItems));
         CreateMap<Domain.Messages.Models.LocationReportItem, LocationReportItemArgs>();
         CreateMap<LocationReportItemArgs, LocationReportItem>();
+        CreateMap<LocationReportItem, LocationReportItemViewModel>();
     }
 }

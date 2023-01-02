@@ -1,6 +1,7 @@
 using ContactApp.Report.Application.Features.Commands.CreateLocationReport;
 using ContactApp.Report.Application.Features.Queries.LocationReports;
 using Microsoft.AspNetCore.Mvc;
+using ContactApp.Report.Application.Features.Queries.LocationReportItems;
 
 namespace ContactApp.Report.WebAPI.Controllers;
 
@@ -23,5 +24,15 @@ public class LocationReportController : BaseApiController
         var reports = await Mediator.Send(query);
 
         return Ok(reports);
+    }
+
+    [HttpGet("{reportId}/items")]
+    public async Task<IActionResult> GetLocationReportItems(Guid reportId)
+    {
+        var query = new LocationReportItemsQuery() { ReportId = reportId };
+
+        var items = await Mediator.Send(query);
+
+        return Ok(items);
     }
 }
