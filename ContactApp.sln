@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
@@ -20,6 +20,34 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp.Contact.Domain", "src\ContactService\Core\ContactApp.Contact.Domain\ContactApp.Contact.Domain.csproj", "{7C0B3C7E-8D23-4650-9D03-DD346754193B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp.Contact.Application", "src\ContactService\Core\ContactApp.Contact.Application\ContactApp.Contact.Application.csproj", "{18AF417E-E9C8-4567-B866-B6708727AA93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReportService", "ReportService", "{AF12BCC3-27E5-414C-BD77-094EF806EC0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{E1BE5E59-F3C7-4DF0-BAB1-CC172AA02DAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp.Report.WebAPI", "src\ReportService\WebApi\ContactApp.Report.WebAPI\ContactApp.Report.WebAPI.csproj", "{6016042B-43DE-4783-A958-3503A9E63599}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{BD1F69F9-563C-46DA-91A5-21352E54DF1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp.Report.Persistence", "src\ReportService\Infrastructure\ContactApp.Report.Persistence\ContactApp.Report.Persistence.csproj", "{C9A987AB-C96B-459C-B56F-3AA0AEAFB4A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{0A4FEB7D-2603-40D2-BCF4-CE21CC3166F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp.Report.Domain", "src\ReportService\Core\ContactApp.Report.Domain\ContactApp.Report.Domain.csproj", "{4D7BAF37-D268-4593-9562-818876FCCB82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp.Report.Application", "src\ReportService\Core\ContactApp.Report.Application\ContactApp.Report.Application.csproj", "{E7A0FF6E-B710-4DD4-A6C9-3F84C293FDB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp.Contact.Domain.Message", "src\ContactService\Core\ContactApp.Contact.Domain.Message\ContactApp.Contact.Domain.Message.csproj", "{D5B93BDE-4908-4518-A13A-CD15DF520ABE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp.Report.Domain.Messages", "src\ReportService\Core\ContactApp.Report.Domain.Messages\ContactApp.Report.Domain.Messages.csproj", "{60B9FCFC-28BF-46F9-BAFC-83CB5A250AAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{AFF72BC8-7191-4905-8EE1-162FD054B8D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{33B76B26-19D6-44CB-B9A1-F2D2FC06BCCB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ContactApp.Contact.Application", "ContactApp.Contact.Application", "{6A93ED61-7629-4B36-B7FC-F42104BC152E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp.Contact.ApplicationTests", "test\ContactService\Core\ContactApp.Contact.Application\ContactApp.Contact.ApplicationTests\ContactApp.Contact.ApplicationTests.csproj", "{14172327-E271-48C8-BAE3-42894A1D4FFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +74,30 @@ Global
 		{18AF417E-E9C8-4567-B866-B6708727AA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18AF417E-E9C8-4567-B866-B6708727AA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18AF417E-E9C8-4567-B866-B6708727AA93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6016042B-43DE-4783-A958-3503A9E63599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6016042B-43DE-4783-A958-3503A9E63599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6016042B-43DE-4783-A958-3503A9E63599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6016042B-43DE-4783-A958-3503A9E63599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A987AB-C96B-459C-B56F-3AA0AEAFB4A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A987AB-C96B-459C-B56F-3AA0AEAFB4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A987AB-C96B-459C-B56F-3AA0AEAFB4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A987AB-C96B-459C-B56F-3AA0AEAFB4A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D7BAF37-D268-4593-9562-818876FCCB82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D7BAF37-D268-4593-9562-818876FCCB82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D7BAF37-D268-4593-9562-818876FCCB82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D7BAF37-D268-4593-9562-818876FCCB82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7A0FF6E-B710-4DD4-A6C9-3F84C293FDB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A0FF6E-B710-4DD4-A6C9-3F84C293FDB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7A0FF6E-B710-4DD4-A6C9-3F84C293FDB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7A0FF6E-B710-4DD4-A6C9-3F84C293FDB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B93BDE-4908-4518-A13A-CD15DF520ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B93BDE-4908-4518-A13A-CD15DF520ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B93BDE-4908-4518-A13A-CD15DF520ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B93BDE-4908-4518-A13A-CD15DF520ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60B9FCFC-28BF-46F9-BAFC-83CB5A250AAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60B9FCFC-28BF-46F9-BAFC-83CB5A250AAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60B9FCFC-28BF-46F9-BAFC-83CB5A250AAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60B9FCFC-28BF-46F9-BAFC-83CB5A250AAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{78D203EF-114B-4716-88F3-D4DDE0963496} = {40E6D941-2B0A-40D2-9079-E5CB3E1FA278}
@@ -56,5 +108,16 @@ Global
 		{01917A08-C6D4-4B09-9ED3-95A3C7CBF82C} = {78D203EF-114B-4716-88F3-D4DDE0963496}
 		{7C0B3C7E-8D23-4650-9D03-DD346754193B} = {01917A08-C6D4-4B09-9ED3-95A3C7CBF82C}
 		{18AF417E-E9C8-4567-B866-B6708727AA93} = {01917A08-C6D4-4B09-9ED3-95A3C7CBF82C}
+		{AF12BCC3-27E5-414C-BD77-094EF806EC0E} = {40E6D941-2B0A-40D2-9079-E5CB3E1FA278}
+		{E1BE5E59-F3C7-4DF0-BAB1-CC172AA02DAE} = {AF12BCC3-27E5-414C-BD77-094EF806EC0E}
+		{6016042B-43DE-4783-A958-3503A9E63599} = {E1BE5E59-F3C7-4DF0-BAB1-CC172AA02DAE}
+		{BD1F69F9-563C-46DA-91A5-21352E54DF1C} = {AF12BCC3-27E5-414C-BD77-094EF806EC0E}
+		{C9A987AB-C96B-459C-B56F-3AA0AEAFB4A7} = {BD1F69F9-563C-46DA-91A5-21352E54DF1C}
+		{0A4FEB7D-2603-40D2-BCF4-CE21CC3166F1} = {AF12BCC3-27E5-414C-BD77-094EF806EC0E}
+		{4D7BAF37-D268-4593-9562-818876FCCB82} = {0A4FEB7D-2603-40D2-BCF4-CE21CC3166F1}
+		{E7A0FF6E-B710-4DD4-A6C9-3F84C293FDB8} = {0A4FEB7D-2603-40D2-BCF4-CE21CC3166F1}
+		{D5B93BDE-4908-4518-A13A-CD15DF520ABE} = {01917A08-C6D4-4B09-9ED3-95A3C7CBF82C}
+		{60B9FCFC-28BF-46F9-BAFC-83CB5A250AAC} = {0A4FEB7D-2603-40D2-BCF4-CE21CC3166F1}
+		{6A93ED61-7629-4B36-B7FC-F42104BC152E} = {33B76B26-19D6-44CB-B9A1-F2D2FC06BCCB}
 	EndGlobalSection
 EndGlobal

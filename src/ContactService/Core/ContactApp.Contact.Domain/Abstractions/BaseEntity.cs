@@ -1,10 +1,10 @@
 namespace ContactApp.Contact.Domain.Abstractions;
 
-public abstract class BaseEntity<TId> : IEntity<TId>
+public abstract class BaseEntity : IEntity
 {
-    public TId Id { get; set; }
+    public Guid Id { get; set; }
     
-    public DateTime CreatedOn { get; set; } = DateTime.Now;
+    public DateTime CreatedOn { get; set; } = DateTime.UtcNow;
 
     public bool IsDeleted { get; set; } = false;
 }

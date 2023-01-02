@@ -6,11 +6,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ContactApp.Contact.Persistence.Repositories;
 
-public class Repository<T, TId> : IRepository<T, TId> where T : class, IEntity<TId>, new()
+public class Repository<T> : IRepository<T> where T : class, IEntity, new()
 {
-    private readonly ContactAppDbContext _context;
+    private readonly ApplicationDbContext _context;
 
-    public Repository(ContactAppDbContext context)
+    public Repository(ApplicationDbContext context)
     {
         _context = context;
     }
@@ -31,14 +31,30 @@ public class Repository<T, TId> : IRepository<T, TId> where T : class, IEntity<T
         await _context.SaveChangesAsync();
     }
 
-    public async Task<T> GetAync(Expression<Func<T, bool>> predicate = null)
+    public async Task<T> GetAsync(Expression<Func<T, bool>> predicate = null, params Expression<Func<T, object>>[] includes)
     {
-        return await Table.Where(predicate).FirstOrDefaultAsync();
+        var query = Table.AsQueryable();
+
+        query = query.Where(predicate);
+
+        if (includes != null)
+        {
+            query = includes.Aggregate(query, (current, include) => current.Include(include));
+        }
+
+        return await query.FirstOrDefaultAsync();
     }
 
     public async Task<IList<T>> GetListAync(Expression<Func<T, bool>> predicate = null)
     {
-        return await Table.Where(predicate).ToListAsync();
+        var query = Table.AsQueryable();
+
+        if (predicate != null)
+        {
+            query = query.Where(predicate);
+        }
+
+        return await query.ToListAsync();
     }
 
     public async Task UpdateAsync(T entity)

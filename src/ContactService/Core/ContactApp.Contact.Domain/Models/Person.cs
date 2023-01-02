@@ -2,7 +2,7 @@ using ContactApp.Contact.Domain.Abstractions;
 
 namespace ContactApp.Contact.Domain.Models;
 
-public class Person : BaseEntity<Guid>
+public class Person : BaseEntity
 {
     public string FirstName { get; set; }
 

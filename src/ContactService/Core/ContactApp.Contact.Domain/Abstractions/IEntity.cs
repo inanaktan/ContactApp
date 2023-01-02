@@ -1,6 +1,5 @@
 namespace ContactApp.Contact.Domain.Abstractions;
 
-public interface IEntity<TId>
+public interface IEntity
 {
-    public TId Id { get; set; }
 }
