@@ -1,14 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Mime;
-using System.Threading.Tasks;
-using ContactApp.Contact.API.Consts;
-using ContactApp.Contact.API.Models.Errors;
+using ContactApp.Report.WebAPI.Consts;
+using ContactApp.Report.WebAPI.Models.Errors;
 using FluentValidation;
 
-namespace ContactApp.Contact.API.Middlewares;
+namespace ContactApp.Report.WebAPI.Middlewares;
 
 public sealed class ExceptionHandlingMiddleware : IMiddleware
 {

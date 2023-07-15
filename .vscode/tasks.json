@@ -7,6 +7,43 @@
             "type": "process",
             "args": [
                 "build",
+                "${workspaceFolder}/src/ReportService/WebApi/ContactApp.Report.WebAPI/ContactApp.Report.WebAPI.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/src/ReportService/WebApi/ContactApp.Report.WebAPI/ContactApp.Report.WebAPI.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/src/ReportService/WebApi/ContactApp.Report.WebAPI/ContactApp.Report.WebAPI.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
                 "${workspaceFolder}/src/ContactService/WebApi/ContactApp.Contact.API/ContactApp.Contact.API.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"

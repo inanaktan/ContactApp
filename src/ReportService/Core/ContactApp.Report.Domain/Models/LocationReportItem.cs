@@ -1,4 +1,5 @@
 using ContactApp.Report.Domain.Abstractions;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace ContactApp.Report.Domain.Models;
 

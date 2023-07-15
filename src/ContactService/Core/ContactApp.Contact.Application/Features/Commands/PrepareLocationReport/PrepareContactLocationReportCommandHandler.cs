@@ -37,6 +37,8 @@ public class PrepareContactLocationReportCommandHandler : IRequestHandler<Prepar
                             Location = c.Key
                         }).ToList();
 
+            var asd = contacts.Where(c => c.InformationType == ContactInformationType.Location);
+
             foreach (var report in reports)
             {
                 var personIds = contacts.Where(c => c.InformationType == ContactInformationType.Location && c.Content.Equals(report.Location)).Select(c => c.PersonId).Distinct();

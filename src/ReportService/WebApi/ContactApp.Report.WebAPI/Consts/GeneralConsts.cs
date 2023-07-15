@@ -1,4 +1,4 @@
-namespace ContactApp.Contact.API.Consts;
+namespace ContactApp.Report.WebAPI.Consts;
 
 public static class GeneralConsts
 {
